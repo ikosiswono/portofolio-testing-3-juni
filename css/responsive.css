@@ -1,0 +1,2059 @@
+/*=====================================================
+RESPONSIVE.CSS
+PART 1/5
+Global • Navbar • Hero
+Portfolio 2026 - Iko Siswono
+=====================================================*/
+
+
+/*=====================================================
+GLOBAL RESPONSIVE
+=====================================================*/
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+
+/*=====================================================
+CONTAINER
+=====================================================*/
+
+.container{
+
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding-inline:20px;
+
+}
+
+@media (min-width:1600px){
+
+.container{
+
+    max-width:1400px;
+
+}
+
+}
+
+
+/*=====================================================
+BREAKPOINT REFERENCE
+
+Desktop XL : 1600+
+Desktop    : 1200
+Laptop     : 992
+Tablet     : 768
+Mobile     : 576
+=====================================================*/
+
+
+/*=====================================================
+NAVBAR
+=====================================================*/
+
+@media(max-width:992px){
+
+.navbar{
+
+    padding:16px 0;
+
+}
+
+.nav-menu{
+
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:290px;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+
+    padding:100px 35px;
+
+    background:#fff;
+
+    transition:.4s ease;
+
+    box-shadow:-15px 0 40px rgba(0,0,0,.12);
+
+    z-index:999;
+
+}
+
+.nav-menu.active{
+
+    right:0;
+
+}
+
+.nav-menu li{
+
+    width:100%;
+
+}
+
+.nav-menu li a{
+
+    display:block;
+    width:100%;
+
+}
+
+.hamburger{
+
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+
+    z-index:1001;
+
+}
+
+.hamburger span{
+
+    width:26px;
+    height:3px;
+
+    border-radius:20px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.logo{
+
+    font-size:20px;
+
+}
+
+.navbar{
+
+    padding:14px 0;
+
+}
+
+}
+
+
+/*=====================================================
+HERO
+=====================================================*/
+
+@media(max-width:1200px){
+
+.hero{
+
+    min-height:auto;
+    padding:170px 0 110px;
+
+}
+
+.hero-container{
+
+    gap:60px;
+
+}
+
+.hero h1{
+
+    font-size:3.3rem;
+
+}
+
+.hero h2{
+
+    font-size:1.7rem;
+
+}
+
+}
+
+
+@media(max-width:992px){
+
+.hero{
+
+    padding-top:150px;
+
+}
+
+.hero-container{
+
+    display:flex;
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    order:2;
+    align-items:center;
+
+}
+
+.hero-image{
+
+    order:1;
+
+}
+
+.hero h1{
+
+    font-size:3rem;
+
+}
+
+.hero-description{
+
+    max-width:650px;
+    margin:auto;
+
+}
+
+.hero-button{
+
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+.hero-social{
+
+    justify-content:center;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.hero{
+
+    padding-top:130px;
+
+}
+
+.hero h1{
+
+    font-size:2.5rem;
+    line-height:1.2;
+
+}
+
+.hero h2{
+
+    font-size:1.35rem;
+
+}
+
+.hero-job{
+
+    font-size:.95rem;
+
+}
+
+.hero-description{
+
+    font-size:.95rem;
+
+}
+
+}
+
+
+@media(max-width:576px){
+
+.hero{
+
+    padding-top:120px;
+
+}
+
+.hero h1{
+
+    font-size:2.1rem;
+
+}
+
+.hero h2{
+
+    font-size:1.15rem;
+
+}
+
+.hero-job{
+
+    font-size:.9rem;
+
+}
+
+.hero-description{
+
+    font-size:.9rem;
+
+}
+
+}
+
+/*=====================================================
+HERO BUTTON
+=====================================================*/
+
+@media (max-width: 768px) {
+
+    .hero-button {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+        margin-top: 30px;
+
+    }
+
+    .btn-primary,
+    .btn-secondary {
+
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .btn-primary,
+    .btn-secondary {
+
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 24px;
+        font-size: .95rem;
+
+    }
+
+}
+
+
+/*=====================================================
+HERO IMAGE
+=====================================================*/
+
+@media (max-width: 1200px) {
+
+    .hero-image {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hero-circle {
+
+        width: 400px;
+        height: 400px;
+
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .hero-circle {
+
+        width: 340px;
+        height: 340px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-circle {
+
+        width: 300px;
+        height: 300px;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .hero-circle {
+
+        width: 250px;
+        height: 250px;
+
+    }
+
+}
+
+
+/*=====================================================
+EXPERIENCE CARD
+=====================================================*/
+
+@media (max-width: 992px) {
+
+    .experience-card {
+
+        position: relative;
+        margin-top: 25px;
+        margin-inline: auto;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .experience-card {
+
+        width: 220px;
+        padding: 16px;
+
+    }
+
+    .experience-card h3 {
+
+        font-size: 24px;
+
+    }
+
+    .experience-card p {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/*=====================================================
+HERO BLOB
+=====================================================*/
+
+@media (max-width: 1200px) {
+
+    .hero-blob {
+
+        transform: scale(.85);
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-blob {
+
+        transform: scale(.65);
+        opacity: .35;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .hero-blob {
+
+        display: none;
+
+    }
+
+}
+
+
+/*=====================================================
+HERO SOCIAL
+=====================================================*/
+
+@media (max-width: 992px) {
+
+    .hero-social {
+
+        justify-content: center;
+        margin-top: 25px;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .hero-social {
+
+        gap: 14px;
+
+    }
+
+    .hero-social a {
+
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+
+    }
+
+}
+
+
+/*=====================================================
+SCROLL INDICATOR
+=====================================================*/
+
+@media (max-width: 992px) {
+
+    .scroll-indicator {
+
+        bottom: 20px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .scroll-indicator {
+
+        display: none;
+
+    }
+
+}
+
+
+/*=====================================================
+PART 1 COMPLETED
+Global
+Container
+Navbar
+Hero
+Hero Button
+Hero Image
+Experience Card
+Hero Blob
+Hero Social
+Scroll Indicator
+=====================================================*/
+
+/*=====================================================
+RESPONSIVE.CSS
+PART 2/5
+About • Personal Information • Statistics
+Portfolio 2026 - Iko Siswono
+=====================================================*/
+
+
+/*=====================================================
+ABOUT SECTION
+=====================================================*/
+
+@media (max-width:1200px){
+
+    .about-wrapper{
+
+        gap:60px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .about-wrapper{
+
+        display:grid;
+        grid-template-columns:1fr;
+        gap:50px;
+
+    }
+
+    .about-image{
+
+        display:flex;
+        justify-content:center;
+
+    }
+
+    .about-image-box{
+
+        max-width:380px;
+        width:100%;
+
+    }
+
+    .about-content{
+
+        text-align:center;
+
+    }
+
+    .about-content h3{
+
+        font-size:30px;
+
+    }
+
+    .about-content h4{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .about{
+
+        padding-top:80px;
+
+    }
+
+    .about-wrapper{
+
+        gap:40px;
+
+    }
+
+    .about-image-box{
+
+        max-width:320px;
+
+    }
+
+    .about-content h3{
+
+        font-size:28px;
+
+    }
+
+    .about-content h4{
+
+        font-size:18px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .about-content h3{
+
+        font-size:24px;
+
+    }
+
+    .about-content h4{
+
+        font-size:16px;
+
+    }
+
+    .about-content p{
+
+        font-size:.95rem;
+        line-height:1.8;
+
+    }
+
+}
+
+
+/*=====================================================
+ABOUT IMAGE
+=====================================================*/
+
+@media (max-width:768px){
+
+    .about-image-box img{
+
+        border-radius:28px;
+
+    }
+
+    .about-badge{
+
+        left:50%;
+        transform:translateX(-50%);
+        bottom:-18px;
+
+        width:max-content;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .about-badge{
+
+        padding:10px 18px;
+        font-size:.85rem;
+
+    }
+
+}
+
+
+/*=====================================================
+PERSONAL INFORMATION
+=====================================================*/
+
+@media (max-width:1200px){
+
+    .personal-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .personal-grid{
+
+        grid-template-columns:repeat(2,1fr);
+        gap:22px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .personal-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/*=====================================================
+INFO CARD
+=====================================================*/
+
+@media (max-width:768px){
+
+    .info-card{
+
+        padding:24px;
+
+    }
+
+    .info-card i{
+
+        width:65px;
+        height:65px;
+        font-size:22px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .info-card{
+
+        text-align:center;
+
+    }
+
+    .info-card h4{
+
+        font-size:17px;
+
+    }
+
+    .info-card p{
+
+        font-size:14px;
+        line-height:1.7;
+
+    }
+
+}
+
+
+/*=====================================================
+STATISTICS
+=====================================================*/
+
+@media (max-width:1200px){
+
+    .statistics-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .statistics-grid{
+
+        gap:20px;
+
+    }
+
+    .stat-card{
+
+        padding:28px 20px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .statistics-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stat-card{
+
+        text-align:center;
+
+    }
+
+    .stat-card h2{
+
+        font-size:38px;
+
+    }
+
+    .stat-card p{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+/*=====================================================
+SECTION TITLE
+=====================================================*/
+
+@media (max-width:768px){
+
+    .section-title{
+
+        margin-bottom:50px;
+
+    }
+
+    .section-title h2{
+
+        font-size:34px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .section-title{
+
+        margin-bottom:40px;
+
+    }
+
+    .section-title h2{
+
+        font-size:28px;
+
+    }
+
+    .section-title p{
+
+        font-size:15px;
+        line-height:1.8;
+
+    }
+
+}
+
+
+/*=====================================================
+TABLET SPACING
+=====================================================*/
+
+@media (max-width:768px){
+
+    .about,
+    .personal,
+    .statistics{
+
+        padding-block:80px;
+
+    }
+
+}
+
+
+/*=====================================================
+MOBILE SPACING
+=====================================================*/
+
+@media (max-width:576px){
+
+    .about,
+    .personal,
+    .statistics{
+
+        padding-block:70px;
+
+    }
+
+}
+
+/*=====================================================
+RESPONSIVE.CSS
+PART 3/5
+Education • Experience
+Portfolio 2026 - Iko Siswono
+=====================================================*/
+
+
+/*=====================================================
+EDUCATION TIMELINE
+=====================================================*/
+
+@media (max-width:1200px){
+
+    .timeline{
+
+        max-width:900px;
+        margin:auto;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .timeline::before{
+
+        left:30px;
+
+    }
+
+    .timeline-item{
+
+        width:100%;
+        padding-left:80px;
+        padding-right:0;
+        margin-bottom:40px;
+
+    }
+
+    .timeline-item.left,
+    .timeline-item.right{
+
+        left:0;
+        text-align:left;
+
+    }
+
+    .timeline-item.left .timeline-content,
+    .timeline-item.right .timeline-content{
+
+        margin:0;
+
+    }
+
+    .timeline-dot{
+
+        left:18px !important;
+        right:auto;
+        transform:none;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .timeline{
+
+        margin-top:50px;
+
+    }
+
+    .timeline-item{
+
+        padding-left:70px;
+        margin-bottom:35px;
+
+    }
+
+    .timeline-content{
+
+        padding:25px;
+
+    }
+
+    .timeline-year{
+
+        font-size:.85rem;
+
+    }
+
+    .timeline-content h3{
+
+        font-size:1.25rem;
+
+    }
+
+    .timeline-content h4{
+
+        font-size:1rem;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .timeline::before{
+
+        left:18px;
+
+    }
+
+    .timeline-item{
+
+        padding-left:50px;
+
+    }
+
+    .timeline-dot{
+
+        width:16px;
+        height:16px;
+        left:10px !important;
+
+    }
+
+    .timeline-content{
+
+        padding:20px;
+
+    }
+
+    .timeline-content h3{
+
+        font-size:1.1rem;
+
+    }
+
+    .timeline-content h4{
+
+        font-size:.95rem;
+
+    }
+
+    .timeline-content p{
+
+        font-size:.9rem;
+        line-height:1.7;
+
+    }
+
+}
+
+
+/*=====================================================
+EXPERIENCE SECTION
+=====================================================*/
+
+@media (max-width:1200px){
+
+    .experience-wrapper{
+
+        gap:25px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .experience-wrapper{
+
+        display:grid;
+        grid-template-columns:1fr;
+        gap:30px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .experience-card{
+
+        padding:28px;
+
+    }
+
+    .experience-content h3{
+
+        font-size:1.4rem;
+
+    }
+
+    .experience-content h4{
+
+        font-size:1rem;
+
+    }
+
+    .experience-year{
+
+        font-size:.85rem;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .experience-card{
+
+        padding:22px;
+
+    }
+
+    .experience-icon{
+
+        width:60px;
+        height:60px;
+        font-size:22px;
+
+    }
+
+    .experience-content h3{
+
+        font-size:1.15rem;
+
+    }
+
+    .experience-content h4{
+
+        font-size:.95rem;
+
+    }
+
+    .experience-content ul{
+
+        margin-top:15px;
+
+    }
+
+    .experience-content ul li{
+
+        font-size:.9rem;
+        line-height:1.7;
+
+    }
+
+}
+
+
+/*=====================================================
+FEATURED EXPERIENCE
+=====================================================*/
+
+@media (max-width:768px){
+
+    .experience-card.featured{
+
+        transform:none;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .experience-card.featured::before{
+
+        font-size:.7rem;
+        padding:6px 12px;
+
+    }
+
+}
+
+
+/*=====================================================
+SECTION SPACING
+=====================================================*/
+
+@media (max-width:768px){
+
+    .education,
+    .experience{
+
+        padding-block:80px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .education,
+    .experience{
+
+        padding-block:70px;
+
+    }
+
+}
+
+/* =====================================================
+RESPONSIVE.CSS - PART 5 (4/5)
+Skills • Certificates • Achievement • Testimonials
+===================================================== */
+
+
+/* =====================================================
+SKILLS
+===================================================== */
+
+@media (max-width:1200px){
+
+    .skills-wrapper{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+
+}
+
+@media (max-width:992px){
+
+    .skills-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .skill-category{
+
+        padding:30px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .skill-category{
+
+        padding:25px 20px;
+
+        border-radius:22px;
+
+    }
+
+    .skill-header{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+
+    }
+
+    .skill-header h3{
+
+        font-size:1.35rem;
+
+    }
+
+    .skill-item{
+
+        margin-top:22px;
+
+    }
+
+    .skill-info{
+
+        font-size:.95rem;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .skill-category{
+
+        padding:22px 18px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+PROGRESS BAR
+===================================================== */
+
+@media(max-width:768px){
+
+    .progress{
+
+        height:10px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+CERTIFICATES
+===================================================== */
+
+@media(max-width:992px){
+
+    .coming-card{
+
+        max-width:700px;
+
+        margin:auto;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .coming-card{
+
+        padding:40px 25px;
+
+    }
+
+    .coming-card i{
+
+        font-size:3rem;
+
+    }
+
+    .coming-card h3{
+
+        font-size:1.6rem;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .coming-card{
+
+        padding:35px 20px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+ACHIEVEMENT
+===================================================== */
+
+@media(max-width:768px){
+
+    .achievement{
+
+        overflow:hidden;
+
+    }
+
+}
+
+
+
+/* =====================================================
+TESTIMONIALS
+===================================================== */
+
+@media(max-width:1200px){
+
+    .testimonial-slider{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .testimonial-card{
+
+        padding:35px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .testimonial-card{
+
+        padding:28px 24px;
+
+        border-radius:25px;
+
+    }
+
+    .testimonial-card p{
+
+        font-size:.96rem;
+
+        line-height:1.8;
+
+    }
+
+    .testimonial-author h4{
+
+        font-size:1rem;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .testimonial-card{
+
+        padding:22px 18px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+SECTION SPACING
+===================================================== */
+
+@media(max-width:768px){
+
+    .skills,
+    .certificates,
+    .achievement,
+    .testimonials{
+
+        padding:80px 0;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .skills,
+    .certificates,
+    .achievement,
+    .testimonials{
+
+        padding:70px 0;
+
+    }
+
+}
+
+
+
+/* =====================================================
+CARD RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .skill-category,
+    .coming-card,
+    .testimonial-card{
+
+        backdrop-filter:blur(20px);
+        -webkit-backdrop-filter:blur(20px);
+
+    }
+
+}
+
+
+
+/* =====================================================
+ICON RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .skill-header i,
+    .coming-card i{
+
+        transform:scale(.9);
+
+    }
+
+}
+
+
+
+/* =====================================================
+TEXT ALIGN
+===================================================== */
+
+@media(max-width:576px){
+
+    .skill-header,
+    .coming-card,
+    .testimonial-card{
+
+        text-align:center;
+
+    }
+
+    .skill-header{
+
+        align-items:center;
+
+    }
+
+}
+
+
+
+/* =====================================================
+BUTTON RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+    }
+
+}
+
+/* =====================================================
+RESPONSIVE.CSS - PART 5 (5/5)
+Portfolio • Gallery • Contact • Footer • Final Responsive
+Portfolio 2026 - Iko Siswono
+===================================================== */
+
+
+/* =====================================================
+PORTFOLIO
+===================================================== */
+
+@media (max-width:1200px){
+
+    .portfolio-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+
+}
+
+@media (max-width:992px){
+
+    .portfolio-grid{
+        grid-template-columns:1fr;
+    }
+
+    .portfolio-filter{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:12px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .portfolio-card{
+
+        border-radius:24px;
+
+    }
+
+    .portfolio-image{
+
+        height:240px;
+
+    }
+
+    .portfolio-content{
+
+        padding:25px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .portfolio-filter button{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* =====================================================
+MASONRY GALLERY
+===================================================== */
+
+@media (max-width:1200px){
+
+    .gallery-grid{
+
+        column-count:3;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .gallery-grid{
+
+        column-count:2;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .gallery-grid{
+
+        column-count:1;
+
+    }
+
+}
+
+.gallery-item img{
+
+    width:100%;
+    display:block;
+
+}
+
+
+/* =====================================================
+LIGHTBOX
+===================================================== */
+
+@media(max-width:768px){
+
+    .lightbox img{
+
+        width:92%;
+        max-height:80vh;
+
+    }
+
+}
+
+
+/* =====================================================
+CONTACT
+===================================================== */
+
+@media(max-width:1200px){
+
+    .contact-wrapper{
+
+        gap:40px;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .contact-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contact-card,
+    .contact-form{
+
+        padding:30px 25px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .contact-card,
+    .contact-form{
+
+        padding:22px;
+
+    }
+
+    .contact-form button{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* =====================================================
+GOOGLE MAP
+===================================================== */
+
+@media(max-width:768px){
+
+    .map iframe{
+
+        height:300px;
+
+    }
+
+}
+
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+@media(max-width:992px){
+
+    .footer-content{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:40px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-social{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .footer{
+
+        padding:60px 0 25px;
+
+    }
+
+}
+
+
+/* =====================================================
+BACK TO TOP
+===================================================== */
+
+@media(max-width:768px){
+
+    #backToTop{
+
+        width:48px;
+        height:48px;
+
+        right:20px;
+        bottom:20px;
+
+    }
+
+}
+
+
+/* =====================================================
+LOADING SCREEN
+===================================================== */
+
+@media(max-width:576px){
+
+    #loader h2{
+
+        font-size:1.4rem;
+
+    }
+
+}
+
+
+/* =====================================================
+CUSTOM CURSOR
+===================================================== */
+
+@media(max-width:992px){
+
+    .cursor,
+    .cursor-dot,
+    .cursor-outline{
+
+        display:none !important;
+
+    }
+
+}
+
+
+/* =====================================================
+FLOATING ELEMENTS
+===================================================== */
+
+@media(max-width:768px){
+
+    .hero-blob,
+    .floating-circle,
+    .floating-shape,
+    .floating-line{
+
+        opacity:.35;
+
+    }
+
+}
+
+
+/* =====================================================
+EXTRA SMALL DEVICE
+===================================================== */
+
+@media(max-width:400px){
+
+    html{
+
+        font-size:14px;
+
+    }
+
+    .container{
+
+        padding:0 16px;
+
+    }
+
+    h1{
+
+        font-size:1.8rem;
+
+    }
+
+    h2{
+
+        font-size:1.45rem;
+
+    }
+
+    .section{
+
+        padding:65px 0;
+
+    }
+
+}
+
+
+/* =====================================================
+ULTRA WIDE SCREEN
+===================================================== */
+
+@media(min-width:1600px){
+
+    .hero{
+
+        min-height:100vh;
+
+    }
+
+    .hero-container{
+
+        gap:120px;
+
+    }
+
+    .section{
+
+        padding:130px 0;
+
+    }
+
+}
+
+
+/* =====================================================
+LANDSCAPE MOBILE
+===================================================== */
+
+@media (max-height:600px) and (orientation:landscape){
+
+    .hero{
+
+        min-height:auto;
+        padding:140px 0 80px;
+
+    }
+
+}
+
+
+/* =====================================================
+REDUCE MOTION
+===================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation:none !important;
+        transition:none !important;
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+
+/* =====================================================
+PRINT MODE
+===================================================== */
+
+@media print{
+
+    header,
+    footer,
+    #loader,
+    #backToTop,
+    .hero-blob,
+    .cursor{
+
+        display:none !important;
+
+    }
+
+    body{
+
+        background:#fff;
+        color:#000;
+
+    }
+
+}
+
+
+/* =====================================================
+FINAL RESPONSIVE POLISH
+===================================================== */
+
+@media(max-width:768px){
+
+    section{
+
+        overflow:hidden;
+
+    }
+
+    img{
+
+        user-select:none;
+        -webkit-user-drag:none;
+
+    }
+
+    button,
+    a{
+
+        -webkit-tap-highlight-color:transparent;
+
+    }
+
+}
+
+
+/* =====================================================
+END OF RESPONSIVE.CSS
+Portfolio 2026 - Iko Siswono
+===================================================== */
